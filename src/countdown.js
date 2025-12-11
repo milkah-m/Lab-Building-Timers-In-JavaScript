@@ -9,9 +9,10 @@ function countdownTimer(startTime, interval){
     
   }, interval)
 
+  return clear
 }
 
-countdownTimer(10, 1000)
+// countdownTimer(10, 1000)
 
 module.exports = { countdownTimer };
 

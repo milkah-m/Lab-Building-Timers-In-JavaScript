@@ -9,9 +9,9 @@ function delayedReminder(message, delay) {
  }
 
 
-
-delayedReminder("Time to stretch!", 3000)
-.then(result => console.log(result),)
+              //testing//
+// const resolved = delayedReminder("Time to stretch!", 3000)
+// .then(result => console.log(result))
 
 
 

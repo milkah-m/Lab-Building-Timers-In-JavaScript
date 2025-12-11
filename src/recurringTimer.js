@@ -9,11 +9,11 @@
 function stopRecurringTimer(timerId){
   clearInterval(timerId)
   }
+     //TESTS//
+//   const recur = recurringTimer("Hello world", 1000)
+// stopRecurringTimer(recur)
 
-  const recur = recurringTimer("Hello world", 1000)
-stopRecurringTimer(recur)
-
-recurringTimer("Hello world", 1000)
+// recurringTimer("Hello world", 1000)
 
 module.exports = { recurringTimer, stopRecurringTimer };
 
