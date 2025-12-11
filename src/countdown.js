@@ -1,22 +1,46 @@
-/**
- * Function: countdownTimer
- * Description: Creates a countdown timer that logs the remaining time at regular intervals and stops at 0.
- *
- * Steps:
- * 1. Accept two parameters: `startTime` (in seconds) and `interval` (in milliseconds).
- * 2. Use `setInterval` to decrement the time and log the remaining time.
- * 3. Stop the timer using `clearInterval` when the remaining time reaches 0.
- * 4. Return the timer ID so it can be used for test validation.
- *
- * Example Usage:
- * countdownTimer(10, 1000); // Logs remaining time every second for 10 seconds.
- */
-function countdownTimer(startTime, interval) {
-  // Initialize the remaining time
-  // Set up a timer using setInterval
-  // Log the remaining time and decrement it
-  // Stop the timer when time reaches 0
-  // Return the timer ID for validation
+function countdownTimer(startTime, interval){
+  let clear = setInterval(() => {
+    console.log(startTime)
+    startTime--
+    if (startTime < 0) {clearInterval(clear)
+      console.log("Time Up!");
+      
+    }
+    
+  }, interval)
+
 }
 
+countdownTimer(10, 1000)
+
 module.exports = { countdownTimer };
+
+
+
+
+    //MY TRYOUTS//
+// const id = setInterval(()=> console.log("Hello World"), 3000)
+// console.log(id);
+
+
+
+  // setTimeout(() => clearInterval(clear), 12000)
+
+  //how to get time up at exactly 0
+  //
+
+  // function milkahCount(startingTime, interval){
+  //     console.log(startingTime + ` seconds remaining`);
+  //      const id = setInterval(() => {
+  //       startingTime-=5
+  //       console.log(startingTime + ` seconds remaining`)
+  //       if(startingTime === 0){
+  //        clearInterval(id)
+  //        console.log("TIME UP!");
+         
+  //        }
+  //       }, interval
+  //      ) 
+  // }
+
+  // milkahCount(15, 5000)
